@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f2a37">
+  <title>LZ Репитери офлайн</title>
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="topbar">
+    <div class="title">LZ Репитери <span id="net" class="net" title="Връзка">●</span></div>
+    <button id="btn-locate" class="icon-btn" aria-label="Моето местоположение">◎</button>
+  </header>
+
+  <div id="map"></div>
+
+  <button id="btn-list" class="fab">☰ Списък</button>
+
+  <section id="sheet" class="sheet hidden" aria-label="Списък с репитери">
+    <div class="sheet-handle"><span></span></div>
+    <div class="sheet-head">
+      <input id="search" type="search" placeholder="Търси позивна, град, честота…" autocomplete="off">
+      <button id="btn-close-sheet" class="icon-btn" aria-label="Затвори">✕</button>
+    </div>
+    <div id="chips" class="chips"></div>
+    <div id="list-meta" class="list-meta"></div>
+    <ul id="list" class="list"></ul>
+    <div id="data-info" class="data-info"></div>
+  </section>
+
+  <section id="detail" class="sheet hidden" aria-label="Детайли">
+    <div class="sheet-handle"><span></span></div>
+    <div class="sheet-head">
+      <h2 id="d-call"></h2>
+      <button id="btn-close-detail" class="icon-btn" aria-label="Затвори">✕</button>
+    </div>
+    <div id="d-body" class="detail-body"></div>
+  </section>
+
+  <script src="vendor/leaflet.js"></script>
+  <script src="vendor/protomaps-leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
