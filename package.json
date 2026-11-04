@@ -1,0 +1,23 @@
+{
+  "name": "lz-map-offline",
+  "version": "1.0.0",
+  "description": "Offline map and list of Bulgarian amateur radio repeaters",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "offline-data": "bash scripts/fetch-offline-data.sh",
+    "serve": "npx --yes http-server www -p 8080 -c-1"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/core": "8.6.0",
+    "leaflet": "1.9.4",
+    "protomaps-leaflet": "5.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0",
+    "pmtiles": "4.5.0"
+  },
+  "private": true,
+  "type": "module"
+}
