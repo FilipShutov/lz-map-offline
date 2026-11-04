@@ -1,0 +1,13 @@
+{
+  "appId": "org.lzmap.offline",
+  "appName": "LZ Репитери",
+  "webDir": "www",
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  },
+  "android": {
+    "backgroundColor": "#1f2a37"
+  }
+}
