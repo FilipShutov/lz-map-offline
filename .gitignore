@@ -1,0 +1,9 @@
+node_modules/
+android/
+www/vendor/
+www/tiles/
+www/coverage/
+www/data/
+*.pmtiles
+*.apk
+package-lock.json
